@@ -1,0 +1,118 @@
+.product-detail{
+    width: 100%;
+    padding: 60px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-slider{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-image: url('../img/p1.png');
+    background-size: cover;
+}
+
+.product-images{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: #fff;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 100px;
+    grid-gap:10px ;
+    padding: 10px;
+}
+.product-images img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.product-images img.active{
+    opacity: 0.5;
+}
+.deatils{
+    width: 50%;
+}
+.details .product-brand{
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.details .product-short-des{
+    font-size: 25px;
+    line-height: 30px;
+    height: auto;
+    margin: 15px 0 30px ;
+}
+.product-price{
+    font-weight: 700;
+    font-size: 30px;
+}
+.product-actual-price{
+    text-decoration: line-through;
+    font-size: 30px;
+    margin: 0 20px;
+    opacity: 0.5;
+    font-weight: 300;
+}
+.product-discount{
+    color: #ff7d7f;
+}
+
+.size-radio-btn{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #383838;
+    border-radius: 50%;
+    margin: 10px;
+    margin-left: 2px;
+    line-height: 80px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.check{
+    background: #383838;
+    color: #fff;
+}
+.btn{
+    width: 38%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 0;
+    margin:5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #383838;
+    font-size: 20px;
+    cursor: pointer;
+}
+.details{
+    margin-left: 15px;
+}
+
+.cart-btn{
+    margin-right:2% ;
+    background: #383838;
+    color: #fff;
+}
+.detail-des{
+    padding:0 10vw ;
+    text-transform: capitalize;
+}
+p.des{
+    text-align: justify;
+    color: #383838;
+    line-height: 25px;
+}
+.heading{
+    font-size: 30px;
+    margin-bottom: 35px;
+}
